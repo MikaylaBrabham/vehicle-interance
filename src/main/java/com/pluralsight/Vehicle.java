@@ -1,6 +1,7 @@
 package com.pluralsight;
 
 public class Vehicle {
+
     protected String color;
     protected int numberOfPassengers;
     protected int cargoCapacity;
@@ -8,12 +9,12 @@ public class Vehicle {
 
 
     //add constructors
-    //public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity) {
-    //    this.color = color;
-     //   this.numberOfPassengers = numberOfPassengers;
-     //   this.cargoCapacity = cargoCapacity;
-      //  this.fuelCapacity = fuelCapacity;
-   // }
+    public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity) {
+        this.color = color;
+        this.numberOfPassengers = numberOfPassengers;
+        this.cargoCapacity = cargoCapacity;
+        this.fuelCapacity = fuelCapacity;
+   }
 
     // getters and setters
     public String getColor() {
