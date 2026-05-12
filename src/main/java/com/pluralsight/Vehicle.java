@@ -8,12 +8,12 @@ public class Vehicle {
 
 
     //add constructors
-    public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity) {1
-        this.color = color;
-        this.numberOfPassengers = numberOfPassengers;
-        this.cargoCapacity = cargoCapacity;
-        this.fuelCapacity = fuelCapacity;
-    }
+    //public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity) {
+    //    this.color = color;
+     //   this.numberOfPassengers = numberOfPassengers;
+     //   this.cargoCapacity = cargoCapacity;
+      //  this.fuelCapacity = fuelCapacity;
+   // }
 
     // getters and setters
     public String getColor() {
