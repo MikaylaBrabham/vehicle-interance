@@ -1,4 +1,5 @@
 package com.pluralsight;
+import java.util.Formatter;
 
 public class Main {
 
@@ -45,11 +46,12 @@ public class Main {
 
 
         //print values to verify working
-        System.out.println("The Hovercraft is " + amphiDrive.getColor());
-        System.out.println("The Hovercraft can have " + amphiDrive.getNumberOfPassengers() + " of passengers.");
-        System.out.println("The Hovercraft holds " + amphiDrive.getCargoCapacity() + " of items.");
-        System.out.println("The Hovercraft needs " + amphiDrive.getFuelCapacity() + " gallons to have a full tank.\n");
-
+      // System.out.println("The Hovercraft is " + amphiDrive);
+       // System.out.println("The Hovercraft can have " +  + " of passengers.");
+       // System.out.println("The Hovercraft holds " + amphiDrive.getCargoCapacity() + " of items.");
+       // System.out.println("The Hovercraft needs " +  + " gallons to have a full tank.\n");
+        System.out.printf("The Hovercraft\n is %s\n holds %d passengers\n holds %d items\n and takes %d gallons to be considered full\n",
+                amphiDrive.getColor(), amphiDrive.getNumberOfPassengers(), amphiDrive.getCargoCapacity(), amphiDrive.getFuelCapacity() );
 
     }
 
