@@ -56,6 +56,18 @@ public class Vehicle {
     protected boolean isHotwireable;
     protected int stealthRating;
     protected int fuelEfficiency;
+
+
+    //added constructors
+    public Vehicle(boolean isWorking, boolean isElectric, boolean isTrackable, boolean isHotwireable, int stealthRating, int fuelEfficiency) {
+        this.isWorking = isWorking;
+        this.isElectric = isElectric;
+        this.isTrackable = isTrackable;
+        this.isHotwireable = isHotwireable;
+        this.stealthRating = stealthRating;
+        this.fuelEfficiency = fuelEfficiency;
+    }
+}
 }
 
 
