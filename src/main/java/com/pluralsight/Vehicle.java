@@ -48,6 +48,14 @@ public class Vehicle {
     public void setFuelCapacity(int fuelCapacity) {
         this.fuelCapacity = fuelCapacity;
     }
+
+    // my personal variables to for my theme of heist
+    protected boolean isWorking;
+    protected boolean isElectric;
+    protected boolean isTrackable;
+    protected boolean isHotwireable;
+    protected int stealthRating;
+    protected int fuelEfficiency;
 }
 
 
