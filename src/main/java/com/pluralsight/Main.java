@@ -20,36 +20,25 @@ public class Main {
         //create instance for Car
         Car easyDrive = new Car("Red", 4, 15, 12);
 
-
         //print values to verify working
-        System.out.println("The Car is " + easyDrive.getColor());
-        System.out.println("The Car can have " + easyDrive.getNumberOfPassengers() + " of passengers.");
-        System.out.println("The Car holds " + easyDrive.getCargoCapacity() + " of items.");
-        System.out.println("The Car needs " + easyDrive.getFuelCapacity() + " gallons to have a full tank.\n");
+        System.out.printf("The SemiTruck\n is %s\n holds %d passengers\n holds %d items\n and takes %d gallons to be considered full\n\n",
+                easyDrive.getColor(), easyDrive.getNumberOfPassengers(), easyDrive.getCargoCapacity(), easyDrive.getFuelCapacity() );
+
 
 
         //create instance for SemiTruck
-
         SemiTruck largestDrive = new SemiTruck("Purple", 1, 100, 300);
 
-
         //print values to verify working
-        System.out.println("The SemiTruck is " + largestDrive.getColor());
-        System.out.println("The SemiTruck can have " + largestDrive.getNumberOfPassengers() + " of passengers.");
-        System.out.println("The SemiTruck holds " + largestDrive.getCargoCapacity() + " of items.");
-        System.out.println("The SemiTruck needs " + largestDrive.getFuelCapacity() + " gallons to have a full tank.\n");
+        System.out.printf("The SemiTruck\n is %s\n holds %d passengers\n holds %d items\n and takes %d gallons to be considered full\n\n",
+                largestDrive.getColor(), largestDrive.getNumberOfPassengers(), largestDrive.getCargoCapacity(), largestDrive.getFuelCapacity() );
 
 
 
         //create instance for Hovercraft
         Hovercraft amphiDrive = new Hovercraft("black", 3, 20, 20);
 
-
         //print values to verify working
-      // System.out.println("The Hovercraft is " + amphiDrive);
-       // System.out.println("The Hovercraft can have " +  + " of passengers.");
-       // System.out.println("The Hovercraft holds " + amphiDrive.getCargoCapacity() + " of items.");
-       // System.out.println("The Hovercraft needs " +  + " gallons to have a full tank.\n");
         System.out.printf("The Hovercraft\n is %s\n holds %d passengers\n holds %d items\n and takes %d gallons to be considered full\n",
                 amphiDrive.getColor(), amphiDrive.getNumberOfPassengers(), amphiDrive.getCargoCapacity(), amphiDrive.getFuelCapacity() );
 
