@@ -57,12 +57,21 @@ public class Main extends Vehicle {
 
 
         //create instance for Hovercraft
-
-
+        Hovercraft amphiDrive = new Hovercraft();
 
         //use setters
+        amphiDrive.setColor("black");
+        amphiDrive.setNumberOfPassengers(3);
+        amphiDrive.setCargoCapacity(20);
+        amphiDrive.setFuelCapacity(20);
 
         //print values to verify working
+        System.out.println("The Hovercraft is" + amphiDrive.getColor());
+        System.out.println("The Hovercraft can have " + amphiDrive.getNumberOfPassengers() + " of passengers.");
+        System.out.println("The Hovercraft holds " + amphiDrive.getCargoCapacity() + " of items.");
+        System.out.println("The Hovercraft needs " + amphiDrive.getFuelCapacity() + "gallons to have a full tank.");
+
+
     }
 
 
