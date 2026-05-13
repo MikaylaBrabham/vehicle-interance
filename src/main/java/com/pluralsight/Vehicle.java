@@ -14,7 +14,7 @@ public class Vehicle {
         this.numberOfPassengers = numberOfPassengers;
         this.cargoCapacity = cargoCapacity;
         this.fuelCapacity = fuelCapacity;
-   }
+    }
 
     // getters and setters
     public String getColor() {
@@ -67,8 +67,43 @@ public class Vehicle {
         this.stealthRating = stealthRating;
         this.fuelEfficiency = fuelEfficiency;
     }
+
+    //add my getters
+    public boolean isWorking() {
+        return isWorking;
+    }
+
+    public boolean isElectric() {
+        return isElectric;
+    }
+
+    public boolean isTrackable() {
+        return isTrackable
+    }
+
+    public boolean isHotwireable() {
+        return isHotwireable;
+    }
+
+    public int getStealthRating() {
+        return stealthRating;
+    }
+
+    public int getFuelEfficiency() {
+        return fuelEfficiency;
+    }
+
+    // add a method for tracking
+    public void disableTracking() {
+        if (isTrackable) {
+            isTrackable = false;
+            System.out.println("Tracking Disable");
+        } else {
+            System.out.println("Cannot Be Traced");
+        }
+    }
 }
-}
+
 
 
 
