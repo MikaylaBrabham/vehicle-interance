@@ -10,7 +10,7 @@ public class Main {
                 false, false, true, 85, 70);
 
         //print values to verify working
-        System.out.printf("The SemiTruck\n is %s\n holds %d passengers\n holds %d items\n and takes %d gallons to be considered full\n\n",
+        System.out.printf("The Moped\n is %s\n holds %d passengers\n holds %d items\n and takes %d gallons to be considered full\n\n",
                 slowDrive.getColor(), slowDrive.getNumberOfPassengers(), slowDrive.getCargoCapacity(), slowDrive.getFuelCapacity());
 
         //this is the old way i went about it for all
@@ -25,7 +25,7 @@ public class Main {
                 false, true, true, 70, 60);
 
         //print values to verify working
-        System.out.printf("The SemiTruck\n is %s\n holds %d passengers\n holds %d items\n and takes %d gallons to be considered full\n\n",
+        System.out.printf("The Car\n is %s\n holds %d passengers\n holds %d items\n and takes %d gallons to be considered full\n\n",
                 easyDrive.getColor(), easyDrive.getNumberOfPassengers(), easyDrive.getCargoCapacity(), easyDrive.getFuelCapacity());
 
 
