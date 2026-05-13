@@ -6,14 +6,29 @@ public class Vehicle {
     protected int numberOfPassengers;
     protected int cargoCapacity;
     protected int fuelCapacity;
+    // my personal variables to for my theme of heist
+    protected boolean isWorking;
+    protected boolean isElectric;
+    protected boolean isTrackable;
+    protected boolean isHotwireable;
+    protected int stealthRating;
+    protected int fuelEfficiency;
 
 
-    //add constructors
-    public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity) {
+
+    //add constructors & other constructors for my theme
+    public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity, boolean isWorking,
+                   boolean isElectric, boolean isTrackable, boolean isHotwireable, int stealthRating, int fuelEfficiency) {
         this.color = color;
         this.numberOfPassengers = numberOfPassengers;
         this.cargoCapacity = cargoCapacity;
         this.fuelCapacity = fuelCapacity;
+        this.isWorking = isWorking;
+        this.isElectric = isElectric;
+        this.isTrackable = isTrackable;
+        this.isHotwireable = isHotwireable;
+        this.stealthRating = stealthRating;
+        this.fuelEfficiency = fuelEfficiency;
     }
 
     // getters and setters
@@ -49,25 +64,6 @@ public class Vehicle {
         this.fuelCapacity = fuelCapacity;
     }
 
-    // my personal variables to for my theme of heist
-    protected boolean isWorking;
-    protected boolean isElectric;
-    protected boolean isTrackable;
-    protected boolean isHotwireable;
-    protected int stealthRating;
-    protected int fuelEfficiency;
-
-
-    //added constructors
-    public Vehicle(boolean isWorking, boolean isElectric, boolean isTrackable, boolean isHotwireable, int stealthRating, int fuelEfficiency) {
-        this.isWorking = isWorking;
-        this.isElectric = isElectric;
-        this.isTrackable = isTrackable;
-        this.isHotwireable = isHotwireable;
-        this.stealthRating = stealthRating;
-        this.fuelEfficiency = fuelEfficiency;
-    }
-
     //add my getters
     public boolean isWorking() {
         return isWorking;
@@ -78,7 +74,7 @@ public class Vehicle {
     }
 
     public boolean isTrackable() {
-        return isTrackable
+        return isTrackable;
     }
 
     public boolean isHotwireable() {
